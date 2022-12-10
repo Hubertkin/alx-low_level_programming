@@ -13,8 +13,8 @@ int main(void)
 		if (x <= 8)
 		{
 			putchar(',');
-			putchar(' ');
-		} else
+		} 
+		if (x <= 9)
 		{
 			putchar(' ');
 		}
