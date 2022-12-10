@@ -13,9 +13,6 @@ int main(void)
 		if (x <= 8)
 		{
 			putchar(',');
-		} 
-		if (x <= 9)
-		{
 			putchar(' ');
 		}
 	}
