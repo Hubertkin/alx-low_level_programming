@@ -2,7 +2,7 @@
 #include <ctype.h>
 /**
  * main - Entry poit
- " Return: always 0
+ * Return: always 0
  */
 int main(void)
 {
@@ -11,7 +11,7 @@ int main(void)
 
 	for (x = 'A'; x <= 'Z'; x++)
 	{
-		if ( x == 'E' || x == 'Q')
+		if (x == 'E' || x == 'Q')
 			continue;
 		else
 		{
