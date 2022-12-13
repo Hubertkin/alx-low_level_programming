@@ -4,7 +4,6 @@
 /**
  * print_sign- checks if input is +ive, -ive  or zero
  * @n: parameter for func print_sign
- * @k: return value
  * Return: 1 for is c is +ive, 0 if c is 0
  *  0 for otherwise
  */
@@ -24,7 +23,7 @@ int print_sign(int n);
 	}
 	else
 	{
-		k = 0;
+		k = -1;
 		_putchar('-');
 	}
 	return (k);
