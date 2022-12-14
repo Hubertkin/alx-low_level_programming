@@ -20,16 +20,14 @@ void jack_bauer(void)
 			{
 				for (p = 0; p < 10; p++)
 				{
-					_putchar('i');
-					_putchar('k');
+					_putchar(i + '0');
+					_putchar(k + '0');
 					_putchar(':');
-					_putchar('j');
-					_putchar('p');
+					_putchar(j + '0');
+					_putchar(p + '0');
 					_putchar('\n');
 				}
 			}
 		}
 	}
-	return ;
 }
-

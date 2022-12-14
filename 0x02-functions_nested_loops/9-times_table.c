@@ -21,7 +21,7 @@ void times_table(void)
 		p = 0;
 		for (k = 0; k < 10; k++)
 		{
-			p += i
+			p += i;
 				if (p > 10)
 				{
 					j = p / 10;
