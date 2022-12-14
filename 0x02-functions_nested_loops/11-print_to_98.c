@@ -27,7 +27,6 @@ void increment(int n)
 {
 	int i;
 	int k;
-	int j;
 
 	for (i = n; i < 99; i++)
 	{
@@ -116,12 +115,12 @@ void hund(int n)
 	int k;
 	int j;
 
-	k = -1 * (i / 10);
+	k = -1 * (n / 10);
 	_putchar('-');
 	j = k / 10;
 	_putchar(j + '0');
 	j = k % 10;
 	_putchar(j + '0');
-	j = -1 * (i % 10);
+	j = -1 * (n % 10);
 	_putchar(j + '0');
 }
