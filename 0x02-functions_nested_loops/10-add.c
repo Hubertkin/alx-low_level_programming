@@ -2,7 +2,8 @@
 
 /**
  * add - computes the addition of a and b input
- * @n: 1st  parameter for func add
+ * @a: 1st  parameter for func add
+ * @b: 2nd parameter for func add
  * Return: res(sum of a and b)
  */
 

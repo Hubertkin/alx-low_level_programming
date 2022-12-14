@@ -1,20 +1,11 @@
 #include "main.h"
 void increment(int n);
 void decrement(int n);
+void hund(int n);
 /**
  * print_to_98 - computes natural numbers from input to 98
  * Return: void
  * @n: input value from func call
-*
- * increment - computes natural nums in increasing order
- * @n: input value of func call
- * Return: void
- */
-
-/**
- * decrement - computes natural nums in decreasing order
- * @n: input value of function call
- * Return: void
  */
 
 void print_to_98(int n)
@@ -26,14 +17,24 @@ void print_to_98(int n)
 	_putchar('\n');
 }
 
+/**
+ * increment - computes natural nums in increasing order
+ * @n: input value of func
+ * Return: void
+ */
+
 void increment(int n)
 {
 	int i;
 	int k;
+	int j;
 
 	for (i = n; i < 99; i++)
 	{
-		if (i < 0 && i < -9)
+		if (i < 0 && i < -99)
+		{
+			hund(i);
+		} else if (i < 0 && i < -9)
 		{
 			k = -1 * (i / 10);
 			_putchar('-');
@@ -62,6 +63,12 @@ void increment(int n)
 		}
 	}
 }
+
+/**
+ * decrement - computes natural numbers in decreasing order
+ * @n: input value of func call
+ * Return: void
+ */
 
 void decrement(int n)
 {
@@ -96,4 +103,25 @@ void decrement(int n)
 			_putchar(' ');
 		}
 	}
+}
+
+/**
+ * hund - computes natural nums for negative 100th
+ * @n: input for func
+ * Return: void
+ */
+
+void hund(int n)
+{
+	int k;
+	int j;
+
+	k = -1 * (i / 10);
+	_putchar('-');
+	j = k / 10;
+	_putchar(j + '0');
+	j = k % 10;
+	_putchar(j + '0');
+	j = -1 * (i % 10);
+	_putchar(j + '0');
 }
