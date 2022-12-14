@@ -30,7 +30,6 @@ void increment(int n)
 {
 	int i;
 	int k;
-	int j;
 
 	for (i = n; i < 99; i++)
 	{
@@ -45,7 +44,7 @@ void increment(int n)
 		{
 			_putchar('-');
 			k = -1 * i;
-			_putchar(k + '0')
+			_putchar(k + '0');
 		} else if (i > 9)
 		{
 			k = i / 10;
@@ -54,13 +53,13 @@ void increment(int n)
 			_putchar(k + '0');
 		} else
 			_putchar(i + '0');
-	}
-	if (i == 99 || i == 98)
-		continue;
-	else
-	{
-		_putchar(',');
-		_putchar(' ');
+		if (i == 99 || i == 98)
+			continue;
+		else
+		{
+			_putchar(',');
+			_putchar(' ');
+		}
 	}
 }
 
@@ -89,12 +88,12 @@ void decrement(int n)
 			k = i % 10;
 			_putchar(k + '0');
 		}
-	}
-	if (i == 98 || i == 97)
-		continue;
-	else
-	{
-		_putchar(',');
-		_putchar(' ');
+		if (i == 98 || i == 97)
+			continue;
+		else
+		{
+			_putchar(',');
+			_putchar(' ');
+		}
 	}
 }
