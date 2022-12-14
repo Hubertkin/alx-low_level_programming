@@ -11,19 +11,8 @@ int print_last_digit(int c)
 {
 	int i;
 
-	if (isdigit(c))
-	{
-		i = c % 10;
-		_putchar(i + '0');
-	} else if (c < 0)
-	{
-		i = -1 * (c % 10);
-		_putchar(i + '0');
-	} else
-	{
-		i = toascii(c) % 10;
-		_putchar(i + '0');
-	}
+	i = c % 10;
+	_putchar(i + '0');
 	return (i);
 }
 
