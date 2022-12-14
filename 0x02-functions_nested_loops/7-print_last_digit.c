@@ -18,7 +18,7 @@ int print_last_digit(int c)
 	} else
 	{
 		i = toascii(c) % 10;
-		_putchar(i + '0';
+		_putchar(i + '0);
 	}
 	return (i);
 }
