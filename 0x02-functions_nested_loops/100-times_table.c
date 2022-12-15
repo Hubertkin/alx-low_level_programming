@@ -17,15 +17,21 @@ void print_times_table(int n)
 		if (n <= 15)
 		{
 			_putchar('0');
-			_putchar(',');
-			_putchar(' ');
-			_putchar(' ');
 			if (n == 0)
-				break;
-			else if (i > 9)
-				continue;
-			else
 				_putchar(' ');
+			else if (i > 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+			}
+			else
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(' ');
+			}
 			p = 0;
 			for (k = 0; k < n; k++)
 			{
