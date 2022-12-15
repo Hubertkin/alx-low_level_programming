@@ -12,7 +12,7 @@ int main(void)
 	long int res;
 
 	res = (add3() + add5());
-	printf("%ld", res);i
+	printf("%ld", res);
 	return (0);
 }
 
