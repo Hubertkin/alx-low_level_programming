@@ -10,31 +10,26 @@ int main(void)
 {
 	long int f1;
 	long int f2;
-	long int res;
+	unsigned long int res;
 	int i;
-	unsigned long int sum;
 
 	res = 0;
-	f1 = 0;
-	f2 = 1;
-	sum = 0;
-	for (i = 2; i < 50; i++)
+	f1 = 1;
+	f2 = 2;
+	printf("%ld, %ld, ", f1, f2);
+	for (i = 2; i < 98; i++)
 	{
 		res = f1 + f2;
 		f1 = f2;
 		f2 = res;
-		if (res < 4000000)
+		printf("%lu", res);
+		if (i != 97)
 		{
-			if ((res % 2) == 0)
-			{
-				sum += res;
-			}
-			else
-				continue;
+			printf(", ");
 		}
 		else
-			break;
+			continue;
 	}
-	printf("%lu\n", sum);
+	printf("\n");
 	return (0);
 }
