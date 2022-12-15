@@ -2,6 +2,7 @@
 #include <stdio.h>
 int add3(void);
 int add5(void);
+int add15(void);
 /**
  * main - computes the sum of func add3 + add5
  * Return: always zero (success)
@@ -11,9 +12,30 @@ int main(void)
 {
 	long int res;
 
-	res = (add3() + add5());
+	res = (add3() + add5()) - add15;
 	printf("%ld", res);
 	return (0);
+}
+
+/**
+ * add15 - computes sum of multiples of 15 less than 1024
+ * Return: total sum (sum)
+ */
+
+int add15(void)
+{
+	int i;
+	int d15;
+	int sum;
+
+	d15 = 0;
+	sum = 0;
+	for (i = 0; i < 68; i++)
+	{
+		d15 += 15;
+		sum += d15;
+	}
+	return (sum);
 }
 
 /**
