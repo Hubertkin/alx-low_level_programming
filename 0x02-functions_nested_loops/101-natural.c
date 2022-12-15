@@ -3,16 +3,17 @@
 int add3(void);
 int add5(void);
 /**
- * addsum - computes the sum of func add3 + add5
- * Return: res(sum of add3 and add5)
+ * main - computes the sum of func add3 + add5
+ * Return: always zero (success)
  */
 
-void addsum(void)
+int main(void)
 {
 	long int res;
 
 	res = (add3() + add5());
-	printf("%ld", res);
+	printf("%ld", res);i
+	return (0);
 }
 
 /**
