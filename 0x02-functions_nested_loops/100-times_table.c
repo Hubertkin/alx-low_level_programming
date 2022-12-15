@@ -20,7 +20,12 @@ void print_times_table(int n)
 			_putchar(',');
 			_putchar(' ');
 			_putchar(' ');
-			_putchar(' ');
+			if (n == 0)
+				break;
+			else if (i > 9)
+				continue;
+			else
+				_putchar(' ');
 			p = 0;
 			for (k = 0; k < n; k++)
 			{
