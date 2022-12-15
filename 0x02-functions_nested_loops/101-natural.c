@@ -11,7 +11,7 @@ void addsum(void)
 {
 	long int res;
 
-	res = ((add3) + add5);
+	res = (add3() + add5());
 	printf("%ld", res);
 }
 
