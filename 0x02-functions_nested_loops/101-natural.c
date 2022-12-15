@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
-
+int add3(void);
+int add5(void);
 /**
  * addsum - computes the sum of func add3 + add5
  * Return: res(sum of add3 and add5)
@@ -11,7 +12,7 @@ void addsum(void)
 	long int res;
 
 	res = add3 + add5;
-	printf("%d", res);
+	printf("%ld", res);
 }
 
 /**
