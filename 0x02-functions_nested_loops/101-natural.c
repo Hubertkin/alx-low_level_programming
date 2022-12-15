@@ -13,7 +13,7 @@ int main(void)
 	long int res;
 
 	res = (add3() + add5()) - add15();
-	printf("%ld", res);
+	printf("%ld\n", res);
 	return (0);
 }
 
