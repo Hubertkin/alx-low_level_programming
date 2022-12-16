@@ -6,4 +6,5 @@ int mul(int a, int b);
 int _isdigit(int c);
 int _isdigit(int c);
 #include <stdio.h>
+#include <ctype.h>
 #endif
