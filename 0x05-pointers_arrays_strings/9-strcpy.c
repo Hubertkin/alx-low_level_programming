@@ -9,6 +9,6 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	trcpy(dest, src);
+	strcpy(dest, src);
 	return (dest);
 }
