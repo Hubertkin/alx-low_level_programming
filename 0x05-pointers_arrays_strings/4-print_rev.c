@@ -1,12 +1,20 @@
-#include <stdio.h>
+#include <string.h>
 
 /**
- * _puts - computes length of string
- * @str: takes address of input
- * Return: length of string
+ * print_rev - arranges string in reverse
+ * @s: takes address of input
+ * Return: void
  */
 
-void _puts(char *str)
+void print_rev(char *s)
 {
-	puts(str);
+	int i;
+	int len;
+
+	len = strlen(s);
+	for (i = len - 1; i >= 0; i--)
+	{
+		_putchar(*(s + i));
+	}
+	_putchar('\n');
 }
