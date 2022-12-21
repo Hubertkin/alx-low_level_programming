@@ -1,5 +1,4 @@
 #include <string.h>
-#include <publib.h>
 
 /**
  * rev_string - arranges string in reverse

@@ -1,5 +1,5 @@
 #include <string.h>
-
+#include "main.h"
 /**
  * print_rev - arranges string in reverse
  * @s: takes address of input
