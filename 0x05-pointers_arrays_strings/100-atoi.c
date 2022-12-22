@@ -12,8 +12,9 @@ int _atoi(char *s)
 	int len;
 	int i;
 	int h;
-	int v;
+	unsigned int v;
 
+	v = 0;
 	h = 0;
 	len = strlen(s);
 	for (i = 0; i < len; i++)
