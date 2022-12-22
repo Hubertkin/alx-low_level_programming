@@ -23,5 +23,4 @@ void reverse_array(int *a, int n)
 	{
 		*(a + i) = d[i];
 	}
-	return (dest);
 }
