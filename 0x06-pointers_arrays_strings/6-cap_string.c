@@ -14,7 +14,7 @@ char *cap_string(char *d)
 	int j;
 	int len;
 
-	len = strlen(s);
+	len = strlen(d);
 	for (j = 0; j < len; j++)
 	{
 		for (i = 0; i < 13; i++)
