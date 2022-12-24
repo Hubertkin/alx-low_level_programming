@@ -21,7 +21,7 @@ char *cap_string(char *d)
 		{
 			if (*(d + j) == a[i] && j != len - 1)
 			{
-				*(d + i) = toupper(*(d + i));
+				*(d + j + 1) = toupper(*(d + j + 1));
 			}
 		}
 	}
