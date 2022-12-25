@@ -19,6 +19,8 @@ char *cap_string(char *d)
 	{
 		for (i = 0; i < 13; i++)
 		{
+			if (j == 0 && isalpha(*(d + j)))
+				*(d + j) = toupper(*(d + j));
 			if (*(d + j) == a[i] && j != len - 1)
 			{
 				*(d + j + 1) = toupper(*(d + j + 1));
