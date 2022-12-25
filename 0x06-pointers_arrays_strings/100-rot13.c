@@ -2,7 +2,7 @@
 #include <ctype.h>
 
 /**
- * leet - ROT13 encoding
+ * rot13 - ROT13 encoding
  * @d: takes address as input
  * Return: char (d)
  */
