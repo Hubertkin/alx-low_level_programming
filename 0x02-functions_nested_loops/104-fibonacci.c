@@ -58,7 +58,7 @@ int main(void)
 	res = 0;
 	f1 = 1;
 	f2 = 2;
-	printf("%llu, %llu, ", f1, f2);
+	printf("%lu, %lu, ", f1, f2);
 	for (i = 2; i < 98; i++)
 	{
 		if (f1 == 7540113804746346429)
@@ -69,7 +69,7 @@ int main(void)
 		res = f1 + f2;
 		f1 = f2;
 		f2 = res;
-		printf("%llu", res);
+		printf("%lu", res);
 		if (i != 97)
 		{
 			printf(", ");
