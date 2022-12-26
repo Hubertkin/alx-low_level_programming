@@ -50,9 +50,9 @@ void print_more(unsigned long int f1, unsigned long int f2)
 
 int main(void)
 {
-	unsigned long long int f1;
-	unsigned long long int f2;
-	unsigned long long int res;
+	unsigned long int f1;
+	unsigned long int f2;
+	unsigned long int res;
 	int i;
 
 	res = 0;
