@@ -13,4 +13,5 @@ int _isdigit(int c);
 int _isupper(int c);
 #include <stdio.h>
 #include <ctype.h>
+void print_number(int n);
 #endif
