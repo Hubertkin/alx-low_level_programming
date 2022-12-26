@@ -17,11 +17,13 @@ void print_more(unsigned long int f1, unsigned long int f2)
 	int f2b;
 	int resultb;
 	int i;
+	unsigned long int huge;
 
-	f1a = f1 % llrint(pow(10, 16));
-	f1b = f1 / llrint(pow(10, 16));
-	f2a = f2 % llrint(pow(10, 16));
-	f2b = f2 / llrint(pow(10, 16));
+	huge = 10000000000000000;
+	f1a = f1 % huge;
+	f1b = f1 / huge;
+	f2a = f2 % huge;
+	f2b = f2 / huge;
 	for (i = 0; i < 6; i++)
 	{
 		resultb = f1b + f2b;
