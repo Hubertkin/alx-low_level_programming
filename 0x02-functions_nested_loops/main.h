@@ -1,5 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
+#include <math.h>
 void addsum(void);
 void print_times_table(int n);
 void print_to_98(int n);
