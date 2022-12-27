@@ -16,17 +16,17 @@ char *rot13(char *d)
 	len = strlen(d);
 	for (i = 0; i < len; i++)
 	{
-		for (j = 0; j < 1 && isalpha(*(d + i)); j++)
+		for (j = 0; isalpha(*(d + i)) && j < 1 && (*(d + i) > 109 || (*(d + i) > 77 && *(d + i) < 91)); j++)
 		{
-			if (*(d + i) > 109 || (*(d + i) > 77 && *(d + i) < 91))
-			{
-				*(d + i) -= 13;
-			}
-			else
-			{
-				*(d + i) += 13;
-			}
+			*(d + i) -= 13;
+			p = 1;
+			continue;
 		}
+		if (isalpha(*(d + i)) && (p != 1) && (*(d + i) <= 109 || (*(d + i) <= 77 && *(d + i) >= 65)))
+		{
+			*(d + i) += 13;
+		}
+		p = 0;
 	}
 	return (d);
 }
