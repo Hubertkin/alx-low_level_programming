@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * func - recursion func to print integers
@@ -7,13 +8,8 @@
  * Return: void
  */
 
-void func(int n)
+void func(unsigned int n)
 {
-	if (n < 0)
-	{
-		n *= -1;
-		_putchar('-');
-	}
 	if (n == 0)
 	{
 		return;
@@ -29,8 +25,16 @@ void func(int n)
 
 void print_number(int n)
 {
+	unsigned int d;
+
 	if  (n == 0)
 		_putchar(48);
+	else if (n < 0)
+	{
+		d = labs(n);
+		_putchar('-');
+		func(d);
+	}
 	else
 		func(n);
 }
